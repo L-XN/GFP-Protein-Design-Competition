@@ -24,12 +24,12 @@ for i, line in enumerate(lines):
 # 生成提交文件
 os.makedirs("./final_submission", exist_ok=True)
 df = pd.DataFrame(rows)
-df.to_csv("./final_submission/GFP_双指标均衡_最终提交.csv", index=False)
+df.to_csv("./final_submission/GFP_双指标均衡_238aa_最终提交.csv", index=False)
 
 print("🎉 合规性校验全部通过！")
-print("✅ 最终提交CSV已生成：final_submission/GFP_双指标均衡_最终提交.csv")
+print("✅ 最终提交CSV已生成：final_submission/GFP_双指标均衡_238aa_最终提交.csv")
 
 # 校验报告
 with open("./logs/合规性校验报告.txt", "w", encoding="utf-8") as f:
-    f.write("所有序列均合规：以M开头，长度239aa，含TYG发色团\n")
+    f.write("所有序列均合规：以M开头，长度238aa，含TYG发色团\n")
     f.write("序列数量：6条\n")
